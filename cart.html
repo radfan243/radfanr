@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سلة الشراء | RADFANR</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="RADFANR">
+      <span>RADFANR</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+    </nav>
+  </header>
+
+  <!-- محتوى السلة -->
+  <section class="cart-container">
+    <h2 class="section-title">سلة الشراء</h2>
+
+    <div id="cartItemsList" class="cart-items">
+      <!-- سيتم تعبئتها بالكود -->
+    </div>
+
+    <div class="cart-summary">
+      <p>الإجمالي: <span id="cartTotal">0</span> $</p>
+
+      <!-- طرق الدفع -->
+      <h3>اختر طريقة الدفع</h3>
+      <div class="payment-methods">
+        <label><input type="radio" name="payMethod" value="paypal" checked> 💳 PayPal</label>
+        <label><input type="radio" name="payMethod" value="mastercard"> 💳 Mastercard</label>
+        <label><input type="radio" name="payMethod" value="bank"> 🏦 حوالة بنكية (الكريمي / القطيبي)</label>
+      </div>
+
+      <button id="checkoutBtn" class="btn-primary">✅ إتمام الشراء</button>
+      <p id="checkoutMsg" class="error-msg"></p>
+    </div>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>

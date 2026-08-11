@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رفع منتج جديد | RADFANR</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="RADFANR">
+      <span>RADFANR</span>
+    </div>
+    <nav class="nav-links">
+      <a href="dashboard.html">⟵ لوحة التحكم</a>
+    </nav>
+  </header>
+
+  <section class="upload-container">
+    <h2 id="formTitle">رفع منتج جديد</h2>
+
+    <form id="productForm" class="product-form">
+
+      <!-- نوع المنتج -->
+      <label>نوع المنتج</label>
+      <select id="productType">
+        <option value="digital">منتج رقمي (كتاب، دورة، قالب...)</option>
+        <option value="physical">منتج ملموس</option>
+      </select>
+
+      <!-- عنوان المنتج -->
+      <label>عنوان المنتج</label>
+      <input type="text" id="productTitle" placeholder="مثال: دورة تعلم البرمجة من الصفر" required>
+
+      <!-- عنوان فرعي -->
+      <label>العنوان الفرعي (وصف قصير)</label>
+      <input type="text" id="productSubtitle" placeholder="مثال: 10 ساعات فيديو + ملفات تدريبية">
+
+      <!-- السعر -->
+      <label>السعر ($)</label>
+      <input type="number" id="productPrice" placeholder="مثال: 15" min="0" required>
+
+      <!-- صورة عرض المنتج -->
+      <label>صورة عرض المنتج</label>
+      <div id="uploadImageBox" class="upload-box">
+        <img id="imagePreview" class="hidden">
+        <span id="uploadImageText">📷 اضغط لرفع صورة المنتج</span>
+      </div>
+      <input type="file" id="productImage" accept="image/*" class="hidden">
+
+      <!-- رفع الملف الرقمي (يظهر فقط لو المنتج رقمي) -->
+      <div id="digitalFields">
+        <label>رفع ملف المنتج</label>
+        <input type="file" id="productFile">
+        <label>أو رابط خارجي للمنتج (اختياري)</label>
+        <input type="url" id="productLink" placeholder="https://...">
+      </div>
+
+      <button type="submit" class="btn-primary">✅ نشر المنتج</button>
+      <p id="uploadError" class="error-msg"></p>
+    </form>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحفظة | RADFANR</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="RADFANR">
+      <span>RADFANR</span>
+    </div>
+    <nav class="nav-links">
+      <a href="dashboard.html">⟵ لوحة التحكم</a>
+    </nav>
+  </header>
+
+  <!-- محتوى المحفظة -->
+  <section class="wallet-container">
+    <h2 class="section-title">محفظتي</h2>
+
+    <div class="wallet-balance-card">
+      <p>الرصيد الحالي</p>
+      <h1 id="walletBalance">0 $</h1>
+      <button id="withdrawBtn" class="btn-primary">💸 طلب سحب الأرباح</button>
+    </div>
+
+    <h3 class="section-title">سجل العمليات</h3>
+    <div id="walletHistory" class="wallet-history">
+      <!-- سيتم تعبئتها بالكود -->
+    </div>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/wallet.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم | RADFANR</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="RADFANR">
+      <span>RADFANR</span>
+    </div>
+    <nav class="nav-links">
+      <span id="userName">مرحباً 👋</span>
+      <a href="wallet.html">💰 المحفظة</a>
+      <a href="#" id="logoutBtn" class="btn-login">تسجيل الخروج</a>
+    </nav>
+  </header>
+
+  <!-- محتوى لوحة التحكم -->
+  <section class="dashboard-container">
+
+    <!-- بطاقات إحصائيات سريعة -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3 id="statProducts">0</h3>
+        <p>منتجاتي</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="statSales">0</h3>
+        <p>عمليات البيع</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="statWallet">0 $</h3>
+        <p>رصيد المحفظة</p>
+      </div>
+    </div>
+
+    <!-- زر رفع منتج جديد -->
+    <div class="dashboard-actions">
+      <a href="upload-product.html" class="btn-primary">➕ رفع منتج جديد</a>
+      <a href="store.html" class="btn-secondary">👁️ عرض متجري</a>
+    </div>
+
+    <!-- قائمة منتجاتي -->
+    <h2 class="section-title">منتجاتي</h2>
+    <div id="myProductsList" class="products-grid">
+      <p class="empty-msg">لسه ما رفعت أي منتج. اضغط "رفع منتج جديد" وابدأ.</p>
+    </div>
+
+  </section>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

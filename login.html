@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول | RADFANR</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="auth-container">
+    <div class="auth-box">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="RADFANR">
+        <span>RADFANR</span>
+      </div>
+
+      <!-- تبويبات: دخول / حساب جديد -->
+      <div class="auth-tabs">
+        <button id="tabLogin" class="tab active">تسجيل الدخول</button>
+        <button id="tabSignup" class="tab">حساب جديد</button>
+      </div>
+
+      <!-- نموذج تسجيل الدخول -->
+      <form id="loginForm" class="auth-form">
+        <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" required>
+        <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+        <button type="submit" class="btn-primary">دخول</button>
+        <p id="loginError" class="error-msg"></p>
+      </form>
+
+      <!-- نموذج إنشاء حساب جديد -->
+      <form id="signupForm" class="auth-form hidden">
+        <input type="text" id="signupName" placeholder="الاسم الكامل" required>
+        <input type="email" id="signupEmail" placeholder="البريد الإلكتروني" required>
+        <input type="password" id="signupPassword" placeholder="كلمة المرور" required>
+        <button type="submit" class="btn-primary">إنشاء الحساب</button>
+        <p id="signupError" class="error-msg"></p>
+      </form>
+
+      <a href="index.html" class="back-home">⟵ الرجوع للرئيسية</a>
+    </div>
+  </div>
+
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
